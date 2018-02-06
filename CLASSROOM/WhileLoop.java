@@ -10,15 +10,14 @@ public class WhileLoop{
         String registry = "";
         char more;
         more = JOptionPane.showInputDialog("do you want to create a bridal registry(y/n)").charAt(0);
-        while (more=='y'){
+        while (more=='y'|| more=='Y'){
           registry += JOptionPane.showInputDialog("Enter item: ");
           registry += JOptionPane.showInputDialog("Enter store: \n");
-          }
+          registry += "\n";
           more = JOptionPane.showInputDialog("do you want to create a bridal registry(y/n)").charAt(0);
           if(!registry.equals("")){
             JOptionPane.showInputDialog(null, "\n bridal registry \n"+ registry);
           }
-
+        }
         }
     }
-}
