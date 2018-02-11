@@ -10,7 +10,7 @@ public class AverageWhile{
       double score,totalScore,averageScore;
       totalStudents=Integer.parseInt(JOptionPane.showInputDialog("Eneter number of students"));
       while (counter<= totalStudents){
-        score = double.parseDouble(JOptionPane.showInputDialog("enter the score " +counter));
+        score = Double.parseDouble(JOptionPane.showInputDialog("enter the score " +counter));
         totalScore += score;
         counter ++;
       }
